@@ -9,6 +9,7 @@ export default function Countdown() {
   const [duration, setDuration] = useState<number | string>("");
   const [timeLeft, setTimeLeft] = useState<number>(0);
   const [isActive, setIsActive] = useState<boolean>(false);
+
   const [isPaused, setIsPaused] = useState<boolean>(false);
   const [isFinished, setIsFinished] = useState<boolean>(false);
   const timeRef = useRef<NodeJS.Timeout | null>(null);
